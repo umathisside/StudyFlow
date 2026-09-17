@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFlow — Find Your Study Flow</title>
+
+    <meta name="description"
+        content="StudyFlow helps students plan, focus and track their study sessions.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-mark">S</span>
+            <span>StudyFlow</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-button">Start Studying</button>
+
+        <button class="menu-toggle" aria-label="Open menu">
+            ☰
+        </button>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    ✦ Built for focused minds
+                </div>
+
+                <h1>
+                    Find your
+                    <span>study flow.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Plan your work, protect your focus, and see your
+                    progress grow — all in one simple study space.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#features" class="primary-button">
+                        Explore StudyFlow →
+                    </a>
+
+                    <a href="#how-it-works" class="secondary-button">
+                        See how it works
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span>✓</span>
+                    Designed around the way students actually study.
+                </div>
+
+            </div>
+
+
+            <!-- Mini Dashboard -->
+            <div class="dashboard-wrapper">
+
+                <div class="dashboard-card">
+
+                    <div class="dashboard-top">
+                        <div>
+                            <p class="small-label">TODAY'S FLOW</p>
+                            <h3>Good evening 👋</h3>
+                        </div>
+
+                        <div class="streak">
+                            🔥 7 days
+                        </div>
+                    </div>
+
+
+                    <div class="progress-area">
+
+                        <div class="progress-info">
+                            <span>Daily progress</span>
+                            <strong>72%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="task-list">
+
+    <div class="task completed task-item">
+        <button class="task-check" aria-label="Complete DBMS revision">✓</button>
+
+        <div>
+            <strong>DBMS revision</strong>
+            <small>45 min session</small>
+        </div>
+    </div>
+
+    <div class="task task-item">
+        <button class="task-check" aria-label="Complete Java practice"></button>
+
+        <div>
+            <strong>Java practice</strong>
+            <small>60 min session</small>
+        </div>
+    </div>
+
+    <div class="task task-item">
+        <button class="task-check" aria-label="Complete reading"></button>
+
+        <div>
+            <strong>Read 10 pages</strong>
+            <small>30 min session</small>
+            </div>
+        </div>
+
+    </div>
+
+
+               <div class="floating-card focus-card">
+
+    <span class="floating-icon">◉</span>
+
+    <div class="focus-content">
+        <small>Focus session</small>
+
+        <strong id="timer">25 : 00</strong>
+
+        <div class="timer-controls">
+            <button id="startTimer">Start</button>
+            <button id="pauseTimer">Pause</button>
+            <button id="resetTimer">Reset</button>
+        </div>
+    </div>
+
+</div>
+
+
+                <div class="floating-card progress-card">
+                    <span class="floating-icon">↗</span>
+                    <div>
+                        <small>This week</small>
+                        <strong id="weeklyProgress">0% complete</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section class="features-section" id="features">
+
+            <div class="section-heading">
+                <p class="section-label">WHY STUDYFLOW</p>
+
+                <h2>
+                    Everything you need to
+                    <span>study better.</span>
+                </h2>
+
+                <p>
+                    Less chaos. More clarity. StudyFlow keeps your
+                    academic routine simple and focused.
+                </p>
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">◎</div>
+                    <h3>Focus Sessions</h3>
+                    <p>
+                        Turn study time into distraction-free sessions
+                        and give every minute a purpose.
+                    </p>
+                    <button class="card-link feature-action">Build your focus →</button>
+                </article>
+
+
+                <article class="feature-card">
+                    <div class="feature-icon" id="smartTasksCard">✓</div>
+                    <h3>Smart Tasks</h3>
+                    <p>
+                        Organize what needs to be done today without
+                        turning your study plan into a complicated system.
+                    </p>
+                    <button class="card-link feature-action">Plan your day →</button>
+                </article>
+
+
+                <article class="feature-card">
+                    <div class="feature-icon">↗</div>
+                    <h3>Progress Pulse</h3>
+                    <p>
+                        See your study consistency at a glance and
+                        understand where your time is going.
+                    </p>
+                    <button class="card-link feature-action">Track your growth →</button>
+                </article>
+
+
+                <article class="feature-card">
+                    <div class="feature-icon">✦</div>
+                    <h3>Study Streaks</h3>
+                    <p>
+                        Build momentum one session at a time and make
+                        consistency feel rewarding.
+                    </p>
+                    <button class="card-link feature-action">Keep the flow →</button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- How it Works -->
+        <!-- How It Works -->
+<section class="how-section" id="how-it-works">
+
+    <div class="section-heading">
+        <p class="section-label">HOW IT WORKS</p>
+
+        <h2>
+            Three steps.
+            <span>One better routine.</span>
+        </h2>
+
+        <p>
+            StudyFlow turns a scattered study day into a simple,
+            repeatable flow.
+        </p>
+    </div>
+
+
+    <div class="steps">
+
+        <article class="step-card">
+
+            <div class="step-top">
+                <span class="step-number">01</span>
+                <span class="step-icon">◎</span>
+            </div>
+
+            <div class="step-content">
+                <h3>Choose your focus</h3>
+
+                <p>
+                    Pick the subject or task that deserves your
+                    attention right now.
+                </p>
+            </div>
+
+            <div class="step-line"></div>
+
+        </article>
+
+
+        <article class="step-card">
+
+            <div class="step-top">
+                <span class="step-number">02</span>
+                <span class="step-icon">◷</span>
+            </div>
+
+            <div class="step-content">
+                <h3>Get in the flow</h3>
+
+                <p>
+                    Start a focused session and give yourself
+                    uninterrupted time to learn.
+                </p>
+            </div>
+
+            <div class="step-line"></div>
+
+        </article>
+
+
+        <article class="step-card">
+
+            <div class="step-top">
+                <span class="step-number">03</span>
+                <span class="step-icon">↗</span>
+            </div>
+
+            <div class="step-content">
+                <h3>Watch yourself grow</h3>
+
+                <p>
+                    Complete your tasks, follow your progress,
+                    and build momentum one day at a time.
+                </p>
+            </div>
+
+            <div class="step-line"></div>
+
+        </article>
+
+    </div>
+
+</section>
+
+        <!-- CTA -->
+       <!-- Final CTA -->
+<section class="cta-section">
+
+    <div class="cta-glow"></div>
+
+    <div class="cta-content">
+
+        <div class="cta-badge">
+            ✦ YOUR NEXT SESSION STARTS HERE
+        </div>
+
+        <h2>
+            Don't wait for motivation.
+            <span>Create momentum.</span>
+        </h2>
+
+        <p>
+            A little progress every day can change the way you learn.
+        </p>
+
+        <button class="primary-button cta-button">
+            Start Your Flow →
+        </button>
+
+        <div class="cta-note">
+            No pressure. Just one focused session at a time.
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <div>
+                <div class="logo">
+                    <span class="logo-mark">S</span>
+                    <span>StudyFlow</span>
+                </div>
+
+                <p>
+                    A calmer way to study, focus and grow.
+                </p>
+            </div>
+
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it works</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <span>© 2026 StudyFlow. Made for focused learners.</span>
+            <span>Study smarter. Stay in flow.</span>
+        </div>
+
+    </footer>
+
+    <!-- Tasks Screen -->
+<section id="tasks-screen" class="app-screen">
+    <div class="screen-header">
+        <div>
+            <span class="section-label">STUDYFLOW</span>
+            <h2>My Tasks</h2>
+            <p>Plan your work. Complete it at your own pace.</p>
+        </div>
+
+        <button class="back-button" id="backFromTasks">← Back</button>
+    </div>
+
+    <div class="task-app">
+        <div class="add-task-box">
+            <input
+                type="text"
+                id="newTaskInput"
+                placeholder="What do you want to study?"
+            />
+
+            <select id="taskPriority">
+                <option value="Low">Low</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button id="addTaskButton">+ Add Task</button>
+        </div>
+
+        <div class="task-summary">
+            <div>
+                <span>Total Tasks</span>
+                <strong id="totalTasks">0</strong>
+            </div>
+
+            <div>
+                <span>Completed</span>
+                <strong id="completedTasks">0</strong>
+            </div>
+
+            <div>
+                <span>Remaining</span>
+                <strong id="remainingTasks">0</strong>
+            </div>
+        </div>
+
+        <div id="customTaskList" class="custom-task-list"></div>
+    </div>
+</section>
+    <script src="script.js"></script>
+
+</body>
+</html>
